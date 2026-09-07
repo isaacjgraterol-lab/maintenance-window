@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bgp-maintenance-window"
+version = "1.0.0"
+description = "Source-aware BGP before/after validation for network maintenance windows"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    {name = "Isaac J. Graterol"},
+]
+keywords = [
+    "bgp",
+    "network-automation",
+    "maintenance-window",
+    "junos",
+    "gnmi",
+    "netconf",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Networking",
+]
+dependencies = [
+    "junos-eznc",
+    "lxml",
+    "paramiko",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[project.scripts]
+maintenance-window = "maintenance_window.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"maintenance_window.ui" = [
+    "templates/*.html",
+    "static/*.css",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

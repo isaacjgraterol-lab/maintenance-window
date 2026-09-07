@@ -1,0 +1,87 @@
+{
+  "module": "bgp.evidence.basic",
+  "version": 1,
+  "scope": "evidence",
+  "capture_level": "basic",
+  "single_connection_capture": true,
+  "reusable_evidence": true,
+  "no_per_module_recapture": true,
+  "description": "Collect reusable BGP Basic evidence for BGP State, BGP Session Health, and BGP Full. Capture once per device/stage/source; analysis modules consume the saved raw evidence.",
+  "sources": {
+    "ssh": {
+      "enabled": true,
+      "format": "json",
+      "items": [
+        {
+          "name": "bgp_summary",
+          "command": "show bgp summary | display json | no-more",
+          "required": true,
+          "parser": "ssh_bgp_summary_json",
+          "raw_filename": "bgp_summary.json",
+          "provides": [
+            "neighbor",
+            "remote_as",
+            "state",
+            "uptime",
+            "flap_count",
+            "prefix_counters",
+            "families"
+          ]
+        }
+      ]
+    },
+    "pyez": {
+      "enabled": true,
+      "format": "xml",
+      "items": [
+        {
+          "name": "bgp_summary",
+          "rpc": "get_bgp_summary_information",
+          "required": true,
+          "parser": "pyez_bgp_summary_xml",
+          "raw_filename": "bgp_summary.xml",
+          "provides": [
+            "neighbor",
+            "remote_as",
+            "state",
+            "uptime",
+            "flap_count",
+            "prefix_counters",
+            "families"
+          ]
+        }
+      ]
+    },
+    "gnmi": {
+      "enabled": true,
+      "encoding": "protojson",
+      "items": [
+        {
+          "name": "bgp_neighbor_state",
+          "path": "/network-instances/network-instance/protocols/protocol/bgp/neighbors/neighbor/state",
+          "required": true,
+          "parser": "gnmi_bgp_neighbor_state",
+          "raw_filename": "bgp_neighbor_state.json",
+          "provides": [
+            "neighbor",
+            "remote_as",
+            "state",
+            "last_established",
+            "established_transitions"
+          ]
+        },
+        {
+          "name": "bgp_neighbor_afi_safi_state",
+          "path": "/network-instances/network-instance/protocols/protocol/bgp/neighbors/neighbor/afi-safis/afi-safi/state",
+          "required": false,
+          "parser": "gnmi_bgp_afi_safi_state",
+          "raw_filename": "bgp_neighbor_afi_safi_state.json",
+          "provides": [
+            "families",
+            "prefix_counters"
+          ]
+        }
+      ]
+    }
+  }
+}

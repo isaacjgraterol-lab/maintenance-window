@@ -1,0 +1,6 @@
+# Maintenance Window device inventory example
+# One management IP per line.
+# Empty lines and lines starting with # are ignored.
+
+192.0.2.1
+192.0.2.2

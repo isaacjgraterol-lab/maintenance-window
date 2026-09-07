@@ -1,0 +1,22 @@
+name: Feature request
+description: Propose an improvement that fits the project scope.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and compatibility considerations
+      description: Explain effects on PyEZ, SSH, gNMIc, reports, or the GUI.

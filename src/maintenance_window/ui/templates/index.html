@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maintenance Window Automation</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Maintenance Window Automation</p>
+      <h1>BGP Maintenance Window GUI</h1>
+      <p class="subtitle">Capture BGP snapshots and generate maintenance-window comparisons from existing MW data.</p>
+    </div>
+    <div class="banner">$author_banner</div>
+  </header>
+
+  <main class="single-layout">
+    <section class="panel">
+      <h2>Main menu</h2>
+      <form method="post" autocomplete="off">
+        <div class="grid three-columns">
+          <label>Protocol
+            <select name="protocol">
+              $protocol_options
+            </select>
+          </label>
+
+          <label>Source
+            <select name="source" id="source-select">
+              $source_options
+            </select>
+          </label>
+
+          <label>Authentication backend
+            <select name="auth_backend" id="auth-backend-select">
+              $auth_backend_options
+            </select>
+          </label>
+
+          <label>Workers
+            <select name="workers">
+              $worker_options
+            </select>
+          </label>
+
+          <label>Device mode
+            <select name="device_mode" id="device-mode-select">
+              <option value="individual" $individual_selected>Individual</option>
+              <option value="db" $db_selected>Database Inventory</option>
+            </select>
+          </label>
+
+          <label id="device-input-label">Device IP / Hostname
+            <input type="text" name="device" id="device-input" value="$device" placeholder="192.0.2.10">
+          </label>
+
+          <label id="inventory-path-label" class="hidden">Inventory file
+            <input type="text" name="inventory_path" id="inventory-path-input" value="$inventory_path" placeholder="inventory/devices.txt">
+          </label>
+
+          <label>MW ID
+            <input type="text" name="mw_id" value="$mw_id" placeholder="MW_DEMO_001">
+          </label>
+
+          <label>Release profile
+            <input type="text" value="BGP Basic v1" disabled>
+            <input type="hidden" name="capture_level" value="basic">
+            <span class="field-hint">This public release captures reusable BGP State and Session Health evidence. Future modules are documented only in ROADMAP.md.</span>
+          </label>
+
+          <label>Connection security
+            <input type="text" value="Compatibility Mode (default)" disabled>
+            <span class="field-hint">Designed for trusted management networks. Optional host-key/TLS hardening is documented in docs/ADVANCED_SECURITY.md.</span>
+          </label>
+        </div>
+
+        <div id="gnmic-warning" class="notice hidden">$gnmic_limitation</div>
+
+        <section id="radius-section" class="sub-panel">
+          <h3>Radius credentials</h3>
+          <p class="hint">Required for each live Capture Before/After action. The password is placed in an OS temporary credentials file for the operation and removed after normal completion.</p>
+          <div class="grid two-columns">
+            <label>Radius username
+              <input type="text" name="radius_username" value="" autocomplete="off" placeholder="radius user">
+            </label>
+            <label>Radius password
+              <input type="password" name="radius_password" value="" autocomplete="new-password" placeholder="radius password">
+            </label>
+          </div>
+        </section>
+
+        <section id="admin-section" class="sub-panel hidden">
+          <h3>Advanced admin authentication</h3>
+          <p class="hint">Required only for local/auto authentication. The GUI validates this against MW_GUI_ADMIN_PASSWORD.</p>
+          <label>GUI admin password
+            <input type="password" name="admin_password" value="" autocomplete="new-password" placeholder="admin security password">
+          </label>
+        </section>
+
+        <section id="manual-section" class="sub-panel hidden">
+          <h3>Manual input</h3>
+          <p class="hint">Visible when source is manual. Provide a JSON/XML file path available on this workstation. Manual source supports Individual mode only.</p>
+          <div class="grid two-columns">
+            <label>Input format
+              <select name="manual_input_format">
+                $manual_input_format_options
+              </select>
+            </label>
+            <label>Input file path
+              <input type="text" name="manual_input_path" value="$manual_input_path" placeholder="C:\path\bgp_snapshot.json">
+            </label>
+          </div>
+        </section>
+
+        <div class="actions capture-actions">
+          <button type="submit" name="action" value="capture-before">Capture Before</button>
+          <button type="submit" name="action" value="capture-after">Capture After</button>
+          <a class="button-link primary" href="/existing-mw">Compare Existing MW</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    const sourceSelect = document.getElementById('source-select');
+    const warning = document.getElementById('gnmic-warning');
+    const manualSection = document.getElementById('manual-section');
+    const authBackendSelect = document.getElementById('auth-backend-select');
+    const radiusSection = document.getElementById('radius-section');
+    const adminSection = document.getElementById('admin-section');
+    const deviceModeSelect = document.getElementById('device-mode-select');
+    const deviceInput = document.getElementById('device-input');
+    const inventoryPathLabel = document.getElementById('inventory-path-label');
+
+    function syncSourceControls() {
+      const source = sourceSelect.value;
+      const isGnmic = source === 'gnmic';
+      const isManual = source === 'manual';
+
+      warning.classList.toggle('hidden', !isGnmic);
+      manualSection.classList.toggle('hidden', !isManual);
+      radiusSection.classList.toggle('hidden', isManual || authBackendSelect.value !== 'radius');
+
+      if (isManual && deviceModeSelect.value === 'db') {
+        deviceModeSelect.value = 'individual';
+      }
+      syncDeviceModeControls();
+    }
+
+    function syncAuthControls() {
+      const backend = authBackendSelect.value;
+      const source = sourceSelect.value;
+      radiusSection.classList.toggle('hidden', source === 'manual' || backend !== 'radius');
+      adminSection.classList.toggle('hidden', backend === 'radius');
+    }
+
+    function syncDeviceModeControls() {
+      const isDb = deviceModeSelect.value === 'db';
+      deviceInput.disabled = isDb;
+      deviceInput.classList.toggle('disabled-input', isDb);
+      inventoryPathLabel.classList.toggle('hidden', !isDb);
+      if (isDb) {
+        deviceInput.value = '';
+      }
+    }
+
+    sourceSelect.addEventListener('change', () => {
+      syncSourceControls();
+      syncAuthControls();
+    });
+    authBackendSelect.addEventListener('change', syncAuthControls);
+    deviceModeSelect.addEventListener('change', syncDeviceModeControls);
+    syncSourceControls();
+    syncAuthControls();
+    syncDeviceModeControls();
+  </script>
+</body>
+</html>

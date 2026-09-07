@@ -1,0 +1,68 @@
+# Python cache, coverage, and generated metadata
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Credentials, keys, and local configuration
+auth/credentials.json
+config/**/*.local.json
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# Local inventory
+inventory/devices.txt
+
+# Local databases and logs
+/data/*.sqlite3
+/data/*.db
+*.log
+
+# Generated Maintenance Window data
+outputs/raw/
+outputs/reports/
+outputs/snapshots/
+
+# Temporary manual upload area
+inputs/manual/uploads/*
+!inputs/manual/uploads/.gitkeep
+
+# Temporary patches, archives, and review artifacts
+.refactor_backups/
+.patch_backups/
+_incoming_*/
+_*_review/
+*_review.zip
+*.patch
+*.rej
+*.orig
+
+# Local release-validation state
+.release/
+
+# Defensive local temporary files
+tmp/

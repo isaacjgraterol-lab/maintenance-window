@@ -1,0 +1,12 @@
+<bgp-information>
+  <bgp-peer>
+    <peer-address>192.0.2.1</peer-address>
+    <peer-as>64501</peer-as>
+    <peer-state>Established</peer-state>
+  </bgp-peer>
+  <bgp-peer>
+    <peer-address>192.0.2.2</peer-address>
+    <peer-as>64502</peer-as>
+    <peer-state>Idle</peer-state>
+  </bgp-peer>
+</bgp-information>

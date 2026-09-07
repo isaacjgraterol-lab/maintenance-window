@@ -1,0 +1,29 @@
+{
+  "pyez": {
+    "port": 830,
+    "timeout_seconds": 60,
+    "verify_host_key": false
+  },
+  "ssh": {
+    "port": 22,
+    "timeout_seconds": 30,
+    "verify_host_key": false,
+    "known_hosts_file": ""
+  },
+  "gnmic": {
+    "command_prefix": [
+      "wsl",
+      "gnmic"
+    ],
+    "port": 32767,
+    "encoding": "proto",
+    "format": "protojson",
+    "timeout_seconds": 60,
+    "insecure": true,
+    "skip_verify": false,
+    "tls_ca": "",
+    "tls_cert": "",
+    "tls_key": "",
+    "tls_server_name": ""
+  }
+}

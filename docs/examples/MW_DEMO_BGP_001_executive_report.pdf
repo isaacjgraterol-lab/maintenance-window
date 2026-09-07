@@ -1,0 +1,311 @@
+%PDF-1.4
+%MWEX
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 6880 >>
+stream
+0.055 0.090 0.160 rg 0.00 680.00 612.00 112.00 re f
+BT 0.560 0.720 0.950 rg /F2 8.50 Tf 1 0 0 1 42.00 758.00 Tm (MAINTENANCE WINDOW AUTOMATION) Tj ET
+BT 1.000 1.000 1.000 rg /F2 23.00 Tf 1 0 0 1 42.00 731.00 Tm (Executive Report) Tj ET
+BT 0.830 0.880 0.950 rg /F1 9.00 Tf 1 0 0 1 42.00 710.00 Tm (BGP before/after validation with operator-focused findings) Tj ET
+1.000 0.960 0.900 rg 478.00 722.00 92.00 20.00 re f
+0.950 0.490 0.080 RG 0.70 w 478.00 722.00 92.00 20.00 re S
+BT 0.950 0.490 0.080 rg /F2 8.40 Tf 1 0 0 1 507.54 728.20 Tm (WARNING) Tj ET
+BT 1.000 1.000 1.000 rg /F2 8.50 Tf 1 0 0 1 394.00 700.00 Tm (MW ID: MW_DEMO_BGP_001) Tj ET
+BT 0.480 0.530 0.600 rg /F2 8.00 Tf 1 0 0 1 42.00 655.00 Tm (REPORT CONTEXT) Tj ET
+1.000 1.000 1.000 rg 42.00 602.00 126.00 44.00 re f
+0.890 0.910 0.940 RG 0.80 w 42.00 602.00 126.00 44.00 re S
+0.120 0.420 0.860 rg 42.00 602.00 4.00 44.00 re f
+BT 0.480 0.530 0.600 rg /F2 7.40 Tf 1 0 0 1 54.00 630.00 Tm (PROTOCOL) Tj ET
+BT 0.100 0.130 0.180 rg /F2 13.00 Tf 1 0 0 1 54.00 615.00 Tm (BGP) Tj ET
+1.000 1.000 1.000 rg 176.00 602.00 126.00 44.00 re f
+0.890 0.910 0.940 RG 0.80 w 176.00 602.00 126.00 44.00 re S
+0.120 0.420 0.860 rg 176.00 602.00 4.00 44.00 re f
+BT 0.480 0.530 0.600 rg /F2 7.40 Tf 1 0 0 1 188.00 630.00 Tm (STAGES) Tj ET
+BT 0.100 0.130 0.180 rg /F2 12.00 Tf 1 0 0 1 188.00 615.00 Tm (before -> after) Tj ET
+1.000 1.000 1.000 rg 310.00 602.00 126.00 44.00 re f
+0.890 0.910 0.940 RG 0.80 w 310.00 602.00 126.00 44.00 re S
+0.120 0.420 0.860 rg 310.00 602.00 4.00 44.00 re f
+BT 0.480 0.530 0.600 rg /F2 7.40 Tf 1 0 0 1 322.00 630.00 Tm (DEVICES) Tj ET
+BT 0.100 0.130 0.180 rg /F2 13.00 Tf 1 0 0 1 322.00 615.00 Tm (2) Tj ET
+1.000 1.000 1.000 rg 444.00 602.00 126.00 44.00 re f
+0.890 0.910 0.940 RG 0.80 w 444.00 602.00 126.00 44.00 re S
+0.120 0.420 0.860 rg 444.00 602.00 4.00 44.00 re f
+BT 0.480 0.530 0.600 rg /F2 7.40 Tf 1 0 0 1 456.00 630.00 Tm (GENERATED) Tj ET
+BT 0.100 0.130 0.180 rg /F2 9.00 Tf 1 0 0 1 456.00 615.00 Tm (2026-09-06 16:10 UTC) Tj ET
+BT 0.100 0.130 0.180 rg /F2 13.50 Tf 1 0 0 1 42.00 580.00 Tm (Executive Summary) Tj ET
+BT 0.480 0.530 0.600 rg /F1 8.50 Tf 1 0 0 1 42.00 565.00 Tm (Fast operational view of the maintenance-window outcome.) Tj ET
+0.890 0.910 0.940 RG 0.80 w 42.00 549.00 m 570.00 549.00 l S
+1.000 1.000 1.000 rg 42.00 482.00 170.67 52.00 re f
+0.890 0.910 0.940 RG 0.80 w 42.00 482.00 170.67 52.00 re S
+0.120 0.420 0.860 rg 42.00 482.00 4.00 52.00 re f
+BT 0.480 0.530 0.600 rg /F2 7.40 Tf 1 0 0 1 54.00 518.00 Tm (TOTAL PEERS) Tj ET
+BT 0.100 0.130 0.180 rg /F2 17.00 Tf 1 0 0 1 54.00 495.00 Tm (7) Tj ET
+1.000 1.000 1.000 rg 220.67 482.00 170.67 52.00 re f
+0.890 0.910 0.940 RG 0.80 w 220.67 482.00 170.67 52.00 re S
+0.950 0.490 0.080 rg 220.67 482.00 4.00 52.00 re f
+BT 0.480 0.530 0.600 rg /F2 7.40 Tf 1 0 0 1 232.67 518.00 Tm (WARNING PEERS) Tj ET
+BT 0.100 0.130 0.180 rg /F2 17.00 Tf 1 0 0 1 232.67 495.00 Tm (6) Tj ET
+1.000 1.000 1.000 rg 399.33 482.00 170.67 52.00 re f
+0.890 0.910 0.940 RG 0.80 w 399.33 482.00 170.67 52.00 re S
+0.950 0.490 0.080 rg 399.33 482.00 4.00 52.00 re f
+BT 0.480 0.530 0.600 rg /F2 7.40 Tf 1 0 0 1 411.33 518.00 Tm (UNHEALTHY PEERS) Tj ET
+BT 0.100 0.130 0.180 rg /F2 17.00 Tf 1 0 0 1 411.33 495.00 Tm (1) Tj ET
+1.000 1.000 1.000 rg 42.00 420.00 170.67 52.00 re f
+0.890 0.910 0.940 RG 0.80 w 42.00 420.00 170.67 52.00 re S
+0.480 0.310 0.780 rg 42.00 420.00 4.00 52.00 re f
+BT 0.480 0.530 0.600 rg /F2 7.40 Tf 1 0 0 1 54.00 456.00 Tm (WARNING FAMILIES) Tj ET
+BT 0.100 0.130 0.180 rg /F2 17.00 Tf 1 0 0 1 54.00 433.00 Tm (3) Tj ET
+1.000 1.000 1.000 rg 220.67 420.00 170.67 52.00 re f
+0.890 0.910 0.940 RG 0.80 w 220.67 420.00 170.67 52.00 re S
+0.780 0.180 0.180 rg 220.67 420.00 4.00 52.00 re f
+BT 0.480 0.530 0.600 rg /F2 7.40 Tf 1 0 0 1 232.67 456.00 Tm (SESSION RESTARTS) Tj ET
+BT 0.100 0.130 0.180 rg /F2 17.00 Tf 1 0 0 1 232.67 433.00 Tm (1) Tj ET
+1.000 1.000 1.000 rg 399.33 420.00 170.67 52.00 re f
+0.890 0.910 0.940 RG 0.80 w 399.33 420.00 170.67 52.00 re S
+0.120 0.420 0.860 rg 399.33 420.00 4.00 52.00 re f
+BT 0.480 0.530 0.600 rg /F2 7.40 Tf 1 0 0 1 411.33 456.00 Tm (PREFIX DELTAS) Tj ET
+BT 0.100 0.130 0.180 rg /F2 17.00 Tf 1 0 0 1 411.33 433.00 Tm (1) Tj ET
+BT 0.480 0.530 0.600 rg /F2 8.00 Tf 1 0 0 1 42.00 404.00 Tm (MODULE STATUS) Tj ET
+0.960 0.970 0.980 rg 42.00 372.00 528.00 28.00 re f
+BT 0.100 0.130 0.180 rg /F2 9.50 Tf 1 0 0 1 52.00 381.00 Tm (BGP State) Tj ET
+0.910 0.980 0.930 rg 482.00 376.00 78.00 20.00 re f
+0.120 0.630 0.320 RG 0.70 w 482.00 376.00 78.00 20.00 re S
+BT 0.120 0.630 0.320 rg /F2 8.40 Tf 1 0 0 1 511.59 382.20 Tm (PASS) Tj ET
+0.960 0.970 0.980 rg 42.00 340.00 528.00 28.00 re f
+BT 0.100 0.130 0.180 rg /F2 9.50 Tf 1 0 0 1 52.00 349.00 Tm (BGP Session Health) Tj ET
+1.000 0.960 0.900 rg 482.00 344.00 78.00 20.00 re f
+0.950 0.490 0.080 RG 0.70 w 482.00 344.00 78.00 20.00 re S
+BT 0.950 0.490 0.080 rg /F2 8.40 Tf 1 0 0 1 504.54 350.20 Tm (WARNING) Tj ET
+BT 0.480 0.530 0.600 rg /F2 8.00 Tf 1 0 0 1 42.00 305.00 Tm (PEER HEALTH DISTRIBUTION) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 288.00 Tm (Pass) Tj ET
+0.890 0.910 0.940 rg 154.00 286.00 378.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 287.00 Tm (0) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 271.00 Tm (Warning) Tj ET
+0.890 0.910 0.940 rg 154.00 269.00 378.00 9.00 re f
+0.950 0.490 0.080 rg 154.00 269.00 378.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 270.00 Tm (6) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 254.00 Tm (Unhealthy) Tj ET
+0.890 0.910 0.940 rg 154.00 252.00 378.00 9.00 re f
+0.780 0.180 0.180 rg 154.00 252.00 63.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 253.00 Tm (1) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 237.00 Tm (Failed) Tj ET
+0.890 0.910 0.940 rg 154.00 235.00 378.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 236.00 Tm (0) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 220.00 Tm (Not evaluated) Tj ET
+0.890 0.910 0.940 rg 154.00 218.00 378.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 219.00 Tm (0) Tj ET
+0.920 0.960 1.000 rg 42.00 86.00 528.00 50.00 re f
+0.720 0.830 0.960 RG 0.70 w 42.00 86.00 528.00 50.00 re S
+BT 0.085 0.135 0.225 rg /F2 9.00 Tf 1 0 0 1 54.00 119.00 Tm (Executive interpretation) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.20 Tf 1 0 0 1 54.00 106.00 Tm (State validation: PASS. Session health: WARNING. Detected 1 session restart\(s\), 6 warning peer\(s\), 1 persistent) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.20 Tf 1 0 0 1 54.00 96.00 Tm (unhealthy peer\(s\), and 3 warning family/table result\(s\).) Tj ET
+0.890 0.910 0.940 RG 0.60 w 42.00 34.00 m 570.00 34.00 l S
+BT 0.480 0.530 0.600 rg /F1 7.20 Tf 1 0 0 1 42.00 20.00 Tm (Maintenance Window Automation | Isaac J. Graterol) Tj ET
+BT 0.480 0.530 0.600 rg /F1 7.20 Tf 1 0 0 1 515.00 20.00 Tm (Page 1 / 3) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 5119 >>
+stream
+0.055 0.090 0.160 rg 0.00 730.00 612.00 62.00 re f
+BT 1.000 1.000 1.000 rg /F2 15.50 Tf 1 0 0 1 42.00 762.00 Tm (DEVICE EXECUTIVE SUMMARY) Tj ET
+BT 0.820 0.880 0.950 rg /F1 8.50 Tf 1 0 0 1 42.00 745.00 Tm (Per-device outcome and operational findings) Tj ET
+0.960 0.970 0.980 rg 42.00 706.00 528.00 24.00 re f
+BT 0.480 0.530 0.600 rg /F2 6.90 Tf 1 0 0 1 46.00 714.00 Tm (DEVICE) Tj ET
+BT 0.480 0.530 0.600 rg /F2 6.90 Tf 1 0 0 1 141.00 714.00 Tm (OVERALL) Tj ET
+BT 0.480 0.530 0.600 rg /F2 6.90 Tf 1 0 0 1 209.00 714.00 Tm (STATE) Tj ET
+BT 0.480 0.530 0.600 rg /F2 6.90 Tf 1 0 0 1 267.00 714.00 Tm (HEALTH) Tj ET
+BT 0.480 0.530 0.600 rg /F2 6.90 Tf 1 0 0 1 335.00 714.00 Tm (SESSIONS) Tj ET
+BT 0.480 0.530 0.600 rg /F2 6.90 Tf 1 0 0 1 397.00 714.00 Tm (PEERS W/U) Tj ET
+BT 0.480 0.530 0.600 rg /F2 6.90 Tf 1 0 0 1 459.00 714.00 Tm (FAM W/T) Tj ET
+BT 0.480 0.530 0.600 rg /F2 6.90 Tf 1 0 0 1 521.00 714.00 Tm (RESTARTS) Tj ET
+0.890 0.910 0.940 RG 0.50 w 42.00 671.00 m 570.00 671.00 l S
+BT 0.100 0.130 0.180 rg /F2 8.20 Tf 1 0 0 1 46.00 681.00 Tm (192.0.2.10) Tj ET
+BT 0.950 0.490 0.080 rg /F2 7.10 Tf 1 0 0 1 141.00 681.00 Tm (WARNING) Tj ET
+BT 0.120 0.630 0.320 rg /F2 7.10 Tf 1 0 0 1 209.00 681.00 Tm (PASS) Tj ET
+BT 0.950 0.490 0.080 rg /F2 7.10 Tf 1 0 0 1 267.00 681.00 Tm (WARNING) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.50 Tf 1 0 0 1 335.00 681.00 Tm (4->4) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.50 Tf 1 0 0 1 397.00 681.00 Tm (3/1) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.50 Tf 1 0 0 1 459.00 681.00 Tm (2/4) Tj ET
+BT 0.100 0.130 0.180 rg /F2 7.50 Tf 1 0 0 1 521.00 681.00 Tm (1) Tj ET
+0.890 0.910 0.940 RG 0.50 w 42.00 641.00 m 570.00 641.00 l S
+BT 0.100 0.130 0.180 rg /F2 8.20 Tf 1 0 0 1 46.00 651.00 Tm (192.0.2.11) Tj ET
+BT 0.950 0.490 0.080 rg /F2 7.10 Tf 1 0 0 1 141.00 651.00 Tm (WARNING) Tj ET
+BT 0.120 0.630 0.320 rg /F2 7.10 Tf 1 0 0 1 209.00 651.00 Tm (PASS) Tj ET
+BT 0.950 0.490 0.080 rg /F2 7.10 Tf 1 0 0 1 267.00 651.00 Tm (WARNING) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.50 Tf 1 0 0 1 335.00 651.00 Tm (3->3) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.50 Tf 1 0 0 1 397.00 651.00 Tm (3/0) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.50 Tf 1 0 0 1 459.00 651.00 Tm (1/4) Tj ET
+BT 0.100 0.130 0.180 rg /F2 7.50 Tf 1 0 0 1 521.00 651.00 Tm (0) Tj ET
+BT 0.100 0.130 0.180 rg /F2 13.50 Tf 1 0 0 1 42.00 608.00 Tm (Finding distribution) Tj ET
+BT 0.480 0.530 0.600 rg /F1 8.50 Tf 1 0 0 1 42.00 593.00 Tm (Counts are factual findings, not a weighted risk score.) Tj ET
+0.890 0.910 0.940 RG 0.80 w 42.00 577.00 m 570.00 577.00 l S
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 566.00 Tm (Session restarts) Tj ET
+0.890 0.910 0.940 rg 154.00 564.00 378.00 9.00 re f
+0.780 0.180 0.180 rg 154.00 564.00 378.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 565.00 Tm (1) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 549.00 Tm (Uptime resets) Tj ET
+0.890 0.910 0.940 rg 154.00 547.00 378.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 548.00 Tm (0) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 532.00 Tm (Flap count increases) Tj ET
+0.890 0.910 0.940 rg 154.00 530.00 378.00 9.00 re f
+0.950 0.490 0.080 rg 154.00 530.00 378.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 531.00 Tm (1) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 515.00 Tm (Flap count resets) Tj ET
+0.890 0.910 0.940 rg 154.00 513.00 378.00 9.00 re f
+0.950 0.490 0.080 rg 154.00 513.00 378.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 514.00 Tm (1) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 498.00 Tm (New families) Tj ET
+0.890 0.910 0.940 rg 154.00 496.00 378.00 9.00 re f
+0.120 0.420 0.860 rg 154.00 496.00 378.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 497.00 Tm (1) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 481.00 Tm (Missing families) Tj ET
+0.890 0.910 0.940 rg 154.00 479.00 378.00 9.00 re f
+0.780 0.180 0.180 rg 154.00 479.00 378.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 480.00 Tm (1) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 464.00 Tm (Persistent unhealthy) Tj ET
+0.890 0.910 0.940 rg 154.00 462.00 378.00 9.00 re f
+0.780 0.180 0.180 rg 154.00 462.00 378.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 463.00 Tm (1) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.00 Tf 1 0 0 1 42.00 447.00 Tm (Prefix deltas) Tj ET
+0.890 0.910 0.940 rg 154.00 445.00 378.00 9.00 re f
+0.480 0.310 0.780 rg 154.00 445.00 378.00 9.00 re f
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 542.00 446.00 Tm (1) Tj ET
+0.960 0.970 0.980 rg 42.00 366.00 528.00 58.00 re f
+0.890 0.910 0.940 RG 0.70 w 42.00 366.00 528.00 58.00 re S
+BT 0.100 0.130 0.180 rg /F2 9.00 Tf 1 0 0 1 54.00 407.00 Tm (Evidence completeness) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.20 Tf 1 0 0 1 54.00 393.00 Tm (192.0.2.10: pyez -> pyez; 192.0.2.11: pyez -> pyez) Tj ET
+0.890 0.910 0.940 RG 0.60 w 42.00 34.00 m 570.00 34.00 l S
+BT 0.480 0.530 0.600 rg /F1 7.20 Tf 1 0 0 1 42.00 20.00 Tm (Maintenance Window Automation | Isaac J. Graterol) Tj ET
+BT 0.480 0.530 0.600 rg /F1 7.20 Tf 1 0 0 1 515.00 20.00 Tm (Page 2 / 3) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 6935 >>
+stream
+0.055 0.090 0.160 rg 0.00 730.00 612.00 62.00 re f
+BT 1.000 1.000 1.000 rg /F2 15.50 Tf 1 0 0 1 42.00 762.00 Tm (OPERATIONAL ATTENTION) Tj ET
+BT 0.820 0.880 0.950 rg /F1 8.50 Tf 1 0 0 1 42.00 745.00 Tm (Peers and findings that deserve operator review) Tj ET
+0.960 0.970 0.980 rg 42.00 706.00 528.00 24.00 re f
+BT 0.480 0.530 0.600 rg /F2 6.80 Tf 1 0 0 1 46.00 714.00 Tm (DEVICE) Tj ET
+BT 0.480 0.530 0.600 rg /F2 6.80 Tf 1 0 0 1 134.00 714.00 Tm (PEER) Tj ET
+BT 0.480 0.530 0.600 rg /F2 6.80 Tf 1 0 0 1 246.00 714.00 Tm (RESULT) Tj ET
+BT 0.480 0.530 0.600 rg /F2 6.80 Tf 1 0 0 1 308.00 714.00 Tm (STATE) Tj ET
+BT 0.480 0.530 0.600 rg /F2 6.80 Tf 1 0 0 1 420.00 714.00 Tm (WHY IT MATTERS) Tj ET
+0.890 0.910 0.940 RG 0.50 w 42.00 669.00 m 570.00 669.00 l S
+BT 0.100 0.130 0.180 rg /F2 7.40 Tf 1 0 0 1 46.00 680.00 Tm (192.0.2.10) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 134.00 680.00 Tm (198.51.100.1) Tj ET
+BT 0.950 0.490 0.080 rg /F2 7.10 Tf 1 0 0 1 246.00 680.00 Tm (WARNING) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 308.00 680.00 Tm (Established -> Established) Tj ET
+BT 0.300 0.350 0.420 rg /F1 6.80 Tf 1 0 0 1 420.00 680.00 Tm (session restart detected) Tj ET
+0.890 0.910 0.940 RG 0.50 w 42.00 642.00 m 570.00 642.00 l S
+BT 0.100 0.130 0.180 rg /F2 7.40 Tf 1 0 0 1 46.00 653.00 Tm (192.0.2.10) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 134.00 653.00 Tm (198.51.100.2) Tj ET
+BT 0.950 0.490 0.080 rg /F2 7.10 Tf 1 0 0 1 246.00 653.00 Tm (UNHEALTHY) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 308.00 653.00 Tm (Idle -> Idle) Tj ET
+BT 0.300 0.350 0.420 rg /F1 6.80 Tf 1 0 0 1 420.00 653.00 Tm (persistent unhealthy peer) Tj ET
+0.890 0.910 0.940 RG 0.50 w 42.00 615.00 m 570.00 615.00 l S
+BT 0.100 0.130 0.180 rg /F2 7.40 Tf 1 0 0 1 46.00 626.00 Tm (192.0.2.10) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 134.00 626.00 Tm (198.51.100.3) Tj ET
+BT 0.950 0.490 0.080 rg /F2 7.10 Tf 1 0 0 1 246.00 626.00 Tm (WARNING) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 308.00 626.00 Tm (Established -> Established) Tj ET
+BT 0.300 0.350 0.420 rg /F1 6.80 Tf 1 0 0 1 420.00 626.00 Tm (1 warning family/table\(s\)) Tj ET
+0.890 0.910 0.940 RG 0.50 w 42.00 588.00 m 570.00 588.00 l S
+BT 0.100 0.130 0.180 rg /F2 7.40 Tf 1 0 0 1 46.00 599.00 Tm (192.0.2.10) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 134.00 599.00 Tm (198.51.100.4) Tj ET
+BT 0.950 0.490 0.080 rg /F2 7.10 Tf 1 0 0 1 246.00 599.00 Tm (WARNING) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 308.00 599.00 Tm (Established -> Established) Tj ET
+BT 0.300 0.350 0.420 rg /F1 6.80 Tf 1 0 0 1 420.00 599.00 Tm (1 warning family/table\(s\)) Tj ET
+0.890 0.910 0.940 RG 0.50 w 42.00 561.00 m 570.00 561.00 l S
+BT 0.100 0.130 0.180 rg /F2 7.40 Tf 1 0 0 1 46.00 572.00 Tm (192.0.2.11) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 134.00 572.00 Tm (203.0.113.1) Tj ET
+BT 0.950 0.490 0.080 rg /F2 7.10 Tf 1 0 0 1 246.00 572.00 Tm (WARNING) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 308.00 572.00 Tm (Established -> Established) Tj ET
+BT 0.300 0.350 0.420 rg /F1 6.80 Tf 1 0 0 1 420.00 572.00 Tm (1 warning family/table\(s\)) Tj ET
+0.890 0.910 0.940 RG 0.50 w 42.00 534.00 m 570.00 534.00 l S
+BT 0.100 0.130 0.180 rg /F2 7.40 Tf 1 0 0 1 46.00 545.00 Tm (192.0.2.11) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 134.00 545.00 Tm (203.0.113.2) Tj ET
+BT 0.950 0.490 0.080 rg /F2 7.10 Tf 1 0 0 1 246.00 545.00 Tm (WARNING) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 308.00 545.00 Tm (Established -> Established) Tj ET
+BT 0.300 0.350 0.420 rg /F1 6.80 Tf 1 0 0 1 420.00 545.00 Tm (flap count increased) Tj ET
+0.890 0.910 0.940 RG 0.50 w 42.00 507.00 m 570.00 507.00 l S
+BT 0.100 0.130 0.180 rg /F2 7.40 Tf 1 0 0 1 46.00 518.00 Tm (192.0.2.11) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 134.00 518.00 Tm (203.0.113.3) Tj ET
+BT 0.950 0.490 0.080 rg /F2 7.10 Tf 1 0 0 1 246.00 518.00 Tm (WARNING) Tj ET
+BT 0.100 0.130 0.180 rg /F1 7.00 Tf 1 0 0 1 308.00 518.00 Tm (Established -> Established) Tj ET
+BT 0.300 0.350 0.420 rg /F1 6.80 Tf 1 0 0 1 420.00 518.00 Tm (flap count reset) Tj ET
+BT 0.100 0.130 0.180 rg /F2 13.50 Tf 1 0 0 1 42.00 479.00 Tm (Finding inventory) Tj ET
+BT 0.480 0.530 0.600 rg /F1 8.50 Tf 1 0 0 1 42.00 464.00 Tm (Complete technical evidence remains available in Detail TXT and JSON.) Tj ET
+0.890 0.910 0.940 RG 0.80 w 42.00 448.00 m 570.00 448.00 l S
+0.960 0.970 0.980 rg 42.00 433.00 257.00 22.00 re f
+BT 0.300 0.350 0.420 rg /F1 7.50 Tf 1 0 0 1 49.00 441.00 Tm (flap count increased) Tj ET
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 271.00 441.00 Tm (1) Tj ET
+0.960 0.970 0.980 rg 42.00 406.00 257.00 22.00 re f
+BT 0.300 0.350 0.420 rg /F1 7.50 Tf 1 0 0 1 49.00 414.00 Tm (flap count reset) Tj ET
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 271.00 414.00 Tm (1) Tj ET
+0.960 0.970 0.980 rg 42.00 379.00 257.00 22.00 re f
+BT 0.300 0.350 0.420 rg /F1 7.50 Tf 1 0 0 1 49.00 387.00 Tm (missing family after) Tj ET
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 271.00 387.00 Tm (1) Tj ET
+0.960 0.970 0.980 rg 42.00 352.00 257.00 22.00 re f
+BT 0.300 0.350 0.420 rg /F1 7.50 Tf 1 0 0 1 49.00 360.00 Tm (new family after) Tj ET
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 271.00 360.00 Tm (1) Tj ET
+0.960 0.970 0.980 rg 42.00 325.00 257.00 22.00 re f
+BT 0.300 0.350 0.420 rg /F1 7.50 Tf 1 0 0 1 49.00 333.00 Tm (persistent unhealthy peer) Tj ET
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 271.00 333.00 Tm (1) Tj ET
+0.960 0.970 0.980 rg 42.00 298.00 257.00 22.00 re f
+BT 0.300 0.350 0.420 rg /F1 7.50 Tf 1 0 0 1 49.00 306.00 Tm (prefix delta) Tj ET
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 271.00 306.00 Tm (1) Tj ET
+0.960 0.970 0.980 rg 42.00 271.00 257.00 22.00 re f
+BT 0.300 0.350 0.420 rg /F1 7.50 Tf 1 0 0 1 49.00 279.00 Tm (session restart detected) Tj ET
+BT 0.100 0.130 0.180 rg /F2 8.00 Tf 1 0 0 1 271.00 279.00 Tm (1) Tj ET
+0.920 0.960 1.000 rg 42.00 112.00 528.00 105.00 re f
+0.720 0.830 0.960 RG 0.80 w 42.00 112.00 528.00 105.00 re S
+BT 0.085 0.135 0.225 rg /F2 10.00 Tf 1 0 0 1 56.00 194.00 Tm (Report usage) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.30 Tf 1 0 0 1 56.00 178.00 Tm (This PDF is designed for executive and operational review. It intentionally summarizes repetitive prefix-level) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.30 Tf 1 0 0 1 56.00 167.00 Tm (detail. Use the Summary TXT for a structured complete warning list, the Detail TXT for peer/family evidence, and) Tj ET
+BT 0.300 0.350 0.420 rg /F1 8.30 Tf 1 0 0 1 56.00 156.00 Tm (JSON for machine-readable audit evidence.) Tj ET
+BT 0.085 0.135 0.225 rg /F2 8.20 Tf 1 0 0 1 56.00 132.00 Tm (Contact: Isaac J. Graterol | isaacjgraterol@gmail.com | linkedin.com/in/inggraterol) Tj ET
+0.890 0.910 0.940 RG 0.60 w 42.00 34.00 m 570.00 34.00 l S
+BT 0.480 0.530 0.600 rg /F1 7.20 Tf 1 0 0 1 42.00 20.00 Tm (Maintenance Window Automation | Isaac J. Graterol) Tj ET
+BT 0.480 0.530 0.600 rg /F1 7.20 Tf 1 0 0 1 515.00 20.00 Tm (Page 3 / 3) Tj ET
+endstream
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000133 00000 n 
+0000000230 00000 n 
+0000000332 00000 n 
+0000000468 00000 n 
+0000007399 00000 n 
+0000007535 00000 n 
+0000012705 00000 n 
+0000012842 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+19829
+%%EOF

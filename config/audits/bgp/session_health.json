@@ -1,0 +1,25 @@
+{
+  "module": "bgp.session_health",
+  "version": 1,
+  "scope": "session-health",
+  "capture_level": "basic",
+  "uses_evidence": "bgp.evidence.basic",
+  "reusable_evidence": true,
+  "no_per_module_recapture": true,
+  "description": "Validate BGP session state, uptime, flap indicators, and per-family prefix counters from reusable BGP Basic evidence. No report module performs a second capture.",
+  "requires": [
+    "neighbor",
+    "state",
+    "uptime",
+    "flap_count",
+    "prefix_counters",
+    "families"
+  ],
+  "optional": [
+    "advertised_prefix_count",
+    "rib_state",
+    "send_state",
+    "last_established",
+    "established_transitions"
+  ]
+}

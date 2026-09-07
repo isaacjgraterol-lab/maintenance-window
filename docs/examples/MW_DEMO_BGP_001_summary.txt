@@ -1,0 +1,149 @@
+========================================================================
+BGP FULL MAINTENANCE REPORT
+========================================================================
+
+MW ID: MW_DEMO_BGP_001
+Stages: before -> after
+Overall result: WARNING
+
+------------------------------------------------------------------------
+MODULE RESULTS
+------------------------------------------------------------------------
+  BGP-STATE: PASS
+  BGP-SESSION-HEALTH: WARNING
+
+------------------------------------------------------------------------
+GLOBAL SUMMARY
+------------------------------------------------------------------------
+BGP-STATE summary:
+  Total devices: 2
+  Lost sessions: 0
+  New sessions: 0
+  State changes: 0
+  Unhealthy FSM transitions: 0
+  New unhealthy: 0
+  Persistent unhealthy: 1
+
+BGP-SESSION-HEALTH summary:
+  Total peers: 7
+  Failed peers: 0
+  Warning peers: 6
+  Unhealthy peers: 1
+  Not evaluated peers: 0
+  Partial peers: 1
+  Data coverage: PARTIAL
+  Families total: 8
+  Warning families: 3
+  Failed families: 0
+  Not evaluated families: 0
+
+Source coverage:
+  Before actual: pyez: 2
+  After actual: pyez: 2
+  Fallback devices: 0
+
+------------------------------------------------------------------------
+KEY FINDING INVENTORY
+------------------------------------------------------------------------
+  Session restarts: 1
+  Uptime resets: 0
+  Flap count increases: 1
+  Flap count resets: 1
+  New families: 1
+  Missing families: 1
+  Prefix deltas: 1
+  Persistent unhealthy peers: 1
+  Low-uptime peers: 0
+
+------------------------------------------------------------------------
+DEVICE SUMMARY:
+------------------------------------------------------------------------
+
+Device: 192.0.2.10
+  Overall result: WARNING
+
+  BGP-STATE:
+    Result: PASS
+    Total sessions: 4 -> 4
+    Lost sessions: 0
+    New sessions: 0
+    State changes: 0
+    New unhealthy: 0
+    Persistent unhealthy: 1
+
+  BGP-SESSION-HEALTH:
+    Result: WARNING
+    Total peers: 4
+    Passed peers: 0
+    Failed peers: 0
+    Warning peers: 3
+    Unhealthy peers: 1
+    Not evaluated peers: 0
+    Families total: 4
+    Warning families: 2
+    Failed families: 0
+
+  Findings:
+    Session restarts: 1
+    Uptime resets: 0
+    Flap count increases: 0
+    Flap count resets: 0
+    New families: 1
+    Missing families: 0
+    Prefix deltas: 1
+    Persistent unhealthy peers: 1
+    Low-uptime peers: 0
+
+Device: 192.0.2.11
+  Overall result: WARNING
+
+  BGP-STATE:
+    Result: PASS
+    Total sessions: 3 -> 3
+    Lost sessions: 0
+    New sessions: 0
+    State changes: 0
+    New unhealthy: 0
+    Persistent unhealthy: 0
+
+  BGP-SESSION-HEALTH:
+    Result: WARNING
+    Total peers: 3
+    Passed peers: 0
+    Failed peers: 0
+    Warning peers: 3
+    Unhealthy peers: 0
+    Not evaluated peers: 0
+    Families total: 4
+    Warning families: 1
+    Failed families: 0
+
+  Findings:
+    Session restarts: 0
+    Uptime resets: 0
+    Flap count increases: 1
+    Flap count resets: 1
+    New families: 0
+    Missing families: 1
+    Prefix deltas: 0
+    Persistent unhealthy peers: 0
+    Low-uptime peers: 0
+
+------------------------------------------------------------------------
+REPORT LOCATION
+------------------------------------------------------------------------
+Report directory: outputs/snapshots/bgp/MW_DEMO_BGP_001/comparison_reports/20260906_161000
+
+------------------------------------------------------------------------
+RESULT EXPLANATION
+------------------------------------------------------------------------
+Result explanation:
+  Blocking reasons: none
+  Non-blocking warnings:
+    - 192.0.2.10 peer 198.51.100.1: session_restart_detected - BGP uptime did not preserve continuity across the snapshot interval (before=3600s, snapshot_interval=600s, expected_after~=4200s, actual_after=3800s).
+    - 192.0.2.10 peer 198.51.100.2: persistent_unhealthy_peer - Peer was not Established before the maintenance window (Idle) and remains not Established after (Idle).
+    - 192.0.2.10 peer 198.51.100.3 / inet.0: prefix_delta - received_prefix_count decreased for table inet.0 (1000 -> 980; drop=20, 2.00%).
+    - 192.0.2.10 peer 198.51.100.4 / inet6.0: new_family_after - Family/table is present only after: inet6.0.
+    - 192.0.2.11 peer 203.0.113.1 / inet6.0: missing_family_after - Family/table is missing after: inet6.0.
+    - 192.0.2.11 peer 203.0.113.2: flap_count_increased - BGP flap count increased (1 -> 2).
+    - 192.0.2.11 peer 203.0.113.3: flap_count_reset - BGP flap count decreased/reset (5 -> 1).

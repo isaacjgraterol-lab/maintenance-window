@@ -1,0 +1,22 @@
+[
+  {
+    "device": "PE01",
+    "neighbor": "192.0.2.1",
+    "state": "Established"
+  },
+  {
+    "device": "PE01",
+    "neighbor": "192.0.2.2",
+    "state": "Idle"
+  },
+  {
+    "device": "PE02",
+    "neighbor": "192.0.2.3",
+    "state": "Active"
+  },
+  {
+    "device": "PE02",
+    "neighbor": "192.0.2.4",
+    "state": "Established"
+  }
+]

@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible problem in BGP Maintenance Window.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include passwords, private keys, production raw evidence, or sensitive topology data.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v1.0.0 or commit hash
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Collection source
+      options: [PyEZ, SSH, gNMIc, Manual, Not applicable]
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: sanitized_output
+    attributes:
+      label: Sanitized output
+      description: Remove credentials, internal addresses, customer names, and raw production data.

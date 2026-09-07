@@ -1,0 +1,390 @@
+========================================================================
+BGP FULL MAINTENANCE REPORT
+========================================================================
+
+MW ID: MW_DEMO_BGP_001
+Stages: before -> after
+Overall result: WARNING
+
+------------------------------------------------------------------------
+MODULE RESULTS
+------------------------------------------------------------------------
+  BGP-STATE: PASS
+  BGP-SESSION-HEALTH: WARNING
+
+------------------------------------------------------------------------
+GLOBAL SUMMARY
+------------------------------------------------------------------------
+BGP-STATE summary:
+  Total devices: 2
+  Lost sessions: 0
+  New sessions: 0
+  State changes: 0
+  Unhealthy FSM transitions: 0
+  New unhealthy: 0
+  Persistent unhealthy: 1
+
+BGP-SESSION-HEALTH summary:
+  Total peers: 7
+  Failed peers: 0
+  Warning peers: 6
+  Unhealthy peers: 1
+  Not evaluated peers: 0
+  Partial peers: 1
+  Data coverage: PARTIAL
+  Families total: 8
+  Warning families: 3
+  Failed families: 0
+  Not evaluated families: 0
+
+Source coverage:
+  Before actual: pyez: 2
+  After actual: pyez: 2
+  Fallback devices: 0
+
+------------------------------------------------------------------------
+KEY FINDING INVENTORY
+------------------------------------------------------------------------
+  Session restarts: 1
+  Uptime resets: 0
+  Flap count increases: 1
+  Flap count resets: 1
+  New families: 1
+  Missing families: 1
+  Prefix deltas: 1
+  Persistent unhealthy peers: 1
+  Low-uptime peers: 0
+
+------------------------------------------------------------------------
+DEVICE SUMMARY:
+------------------------------------------------------------------------
+
+Device: 192.0.2.10
+  Overall result: WARNING
+
+  BGP-STATE:
+    Result: PASS
+    Total sessions: 4 -> 4
+    Lost sessions: 0
+    New sessions: 0
+    State changes: 0
+    New unhealthy: 0
+    Persistent unhealthy: 1
+
+  BGP-SESSION-HEALTH:
+    Result: WARNING
+    Total peers: 4
+    Passed peers: 0
+    Failed peers: 0
+    Warning peers: 3
+    Unhealthy peers: 1
+    Not evaluated peers: 0
+    Families total: 4
+    Warning families: 2
+    Failed families: 0
+
+  Findings:
+    Session restarts: 1
+    Uptime resets: 0
+    Flap count increases: 0
+    Flap count resets: 0
+    New families: 1
+    Missing families: 0
+    Prefix deltas: 1
+    Persistent unhealthy peers: 1
+    Low-uptime peers: 0
+
+Device: 192.0.2.11
+  Overall result: WARNING
+
+  BGP-STATE:
+    Result: PASS
+    Total sessions: 3 -> 3
+    Lost sessions: 0
+    New sessions: 0
+    State changes: 0
+    New unhealthy: 0
+    Persistent unhealthy: 0
+
+  BGP-SESSION-HEALTH:
+    Result: WARNING
+    Total peers: 3
+    Passed peers: 0
+    Failed peers: 0
+    Warning peers: 3
+    Unhealthy peers: 0
+    Not evaluated peers: 0
+    Families total: 4
+    Warning families: 1
+    Failed families: 0
+
+  Findings:
+    Session restarts: 0
+    Uptime resets: 0
+    Flap count increases: 1
+    Flap count resets: 1
+    New families: 0
+    Missing families: 1
+    Prefix deltas: 0
+    Persistent unhealthy peers: 0
+    Low-uptime peers: 0
+
+------------------------------------------------------------------------
+REPORT LOCATION
+------------------------------------------------------------------------
+Report directory: outputs/snapshots/bgp/MW_DEMO_BGP_001/comparison_reports/20260906_161000
+
+------------------------------------------------------------------------
+RESULT EXPLANATION
+------------------------------------------------------------------------
+Result explanation:
+  Blocking reasons: none
+  Non-blocking warnings:
+    - 192.0.2.10 peer 198.51.100.1: session_restart_detected - BGP uptime did not preserve continuity across the snapshot interval (before=3600s, snapshot_interval=600s, expected_after~=4200s, actual_after=3800s).
+    - 192.0.2.10 peer 198.51.100.2: persistent_unhealthy_peer - Peer was not Established before the maintenance window (Idle) and remains not Established after (Idle).
+    - 192.0.2.10 peer 198.51.100.3 / inet.0: prefix_delta - received_prefix_count decreased for table inet.0 (1000 -> 980; drop=20, 2.00%).
+    - 192.0.2.10 peer 198.51.100.4 / inet6.0: new_family_after - Family/table is present only after: inet6.0.
+    - 192.0.2.11 peer 203.0.113.1 / inet6.0: missing_family_after - Family/table is missing after: inet6.0.
+    - 192.0.2.11 peer 203.0.113.2: flap_count_increased - BGP flap count increased (1 -> 2).
+    - 192.0.2.11 peer 203.0.113.3: flap_count_reset - BGP flap count decreased/reset (5 -> 1).
+
+========================================================================
+DETAILED REPORT
+========================================================================
+
+------------------------------------------------------------------------
+BGP-STATE device reports:
+------------------------------------------------------------------------
+  Device: 192.0.2.10
+    Result: PASS
+    Lost sessions: 0
+    New sessions: 0
+    State changes: 0
+    Unhealthy FSM transitions: 0
+    New unhealthy: 0
+    Persistent unhealthy: 1
+  Device: 192.0.2.11
+    Result: PASS
+    Lost sessions: 0
+    New sessions: 0
+    State changes: 0
+    Unhealthy FSM transitions: 0
+    New unhealthy: 0
+    Persistent unhealthy: 0
+
+------------------------------------------------------------------------
+BGP-SESSION-HEALTH device reports:
+------------------------------------------------------------------------
+  Device: 192.0.2.10
+    Result: WARNING
+    Coverage: PARTIAL
+    Sources: pyez->pyez / pyez->pyez
+    Peers: total=4 passed=0 failed=0 warning=3 unhealthy=1 not_evaluated=0 partial=1
+    Families: total=4 warning=2 failed=0 not_evaluated=0
+    Peer Summary:
+    Peer: 198.51.100.1
+      Result: WARNING
+      Coverage: FULL
+      State: Established -> Established
+      Health: OK -> OK
+      Uptime: 3600 -> 3800
+      Uptime seconds: 3600 -> 3800
+      Flap count: 0 -> 0
+      Peer counters:
+        active: 1000 -> 1000
+        received: 1000 -> 1000
+        accepted: 1000 -> 1000
+        suppressed: 0 -> 0
+        advertised: 1000 -> 1000
+      Peer findings:
+        - WARNING session_restart_detected: BGP uptime did not preserve continuity across the snapshot interval (before=3600s, snapshot_interval=600s, expected_after~=4200s, actual_after=3800s).
+      Family/Table Details:
+        Table: inet.0
+          Family: ipv4-unicast
+          Result: PASS
+          RIB state: ['BGP restart is complete'] -> ['BGP restart is complete']
+          Send state: in sync -> in sync
+          active: 1000 -> 1000
+          received: 1000 -> 1000
+          accepted: 1000 -> 1000
+          suppressed: 0 -> 0
+          advertised: 1000 -> 1000
+    Peer: 198.51.100.2
+      Result: UNHEALTHY
+      Coverage: PARTIAL
+      Not evaluated checks: uptime, flap_count
+      State: Idle -> Idle
+      Health: CRITICAL -> CRITICAL
+      Uptime: N/A -> N/A
+      Uptime seconds: N/A -> N/A
+      Flap count: N/A -> N/A
+      Peer counters:
+        active: N/A -> N/A
+        received: N/A -> N/A
+        accepted: N/A -> N/A
+        suppressed: N/A -> N/A
+        advertised: N/A -> N/A
+      Peer findings:
+        - UNHEALTHY persistent_unhealthy_peer: Peer was not Established before the maintenance window (Idle) and remains not Established after (Idle).
+    Peer: 198.51.100.3
+      Result: WARNING
+      Coverage: FULL
+      State: Established -> Established
+      Health: OK -> OK
+      Uptime: 5000 -> 5600
+      Uptime seconds: 5000 -> 5600
+      Flap count: 0 -> 0
+      Peer counters:
+        active: 850 -> 850
+        received: 1000 -> 980 *
+        accepted: 900 -> 900
+        suppressed: 0 -> 0
+        advertised: 800 -> 800
+      Family/Table Details:
+        Table: inet.0
+          Family: ipv4-unicast
+          Result: WARNING
+          RIB state: ['BGP restart is complete'] -> ['BGP restart is complete']
+          Send state: in sync -> in sync
+          active: 850 -> 850
+          received: 1000 -> 980
+          accepted: 900 -> 900
+          suppressed: 0 -> 0
+          advertised: 800 -> 800
+          Findings:
+            - WARNING prefix_delta: received_prefix_count decreased for table inet.0 (1000 -> 980; drop=20, 2.00%).
+    Peer: 198.51.100.4
+      Result: WARNING
+      Coverage: FULL
+      State: Established -> Established
+      Health: OK -> OK
+      Uptime: 4000 -> 4600
+      Uptime seconds: 4000 -> 4600
+      Flap count: 0 -> 0
+      Peer counters:
+        active: 200 -> 240 *
+        received: 200 -> 240 *
+        accepted: 200 -> 240 *
+        suppressed: 0 -> 0
+        advertised: 200 -> 240 *
+      Family/Table Details:
+        Table: inet.0
+          Family: ipv4-unicast
+          Result: PASS
+          RIB state: ['BGP restart is complete'] -> ['BGP restart is complete']
+          Send state: in sync -> in sync
+          active: 200 -> 200
+          received: 200 -> 200
+          accepted: 200 -> 200
+          suppressed: 0 -> 0
+          advertised: 200 -> 200
+        Table: inet6.0
+          Family: ipv6-unicast
+          Result: WARNING
+          RIB state: N/A -> ['BGP restart is complete']
+          Send state: N/A -> in sync
+          active: N/A -> 40
+          received: N/A -> 40
+          accepted: N/A -> 40
+          suppressed: N/A -> 0
+          advertised: N/A -> 40
+          Findings:
+            - WARNING new_family_after: Family/table is present only after: inet6.0.
+  Device: 192.0.2.11
+    Result: WARNING
+    Coverage: FULL
+    Sources: pyez->pyez / pyez->pyez
+    Peers: total=3 passed=0 failed=0 warning=3 unhealthy=0 not_evaluated=0 partial=0
+    Families: total=4 warning=1 failed=0 not_evaluated=0
+    Peer Summary:
+    Peer: 203.0.113.1
+      Result: WARNING
+      Coverage: FULL
+      State: Established -> Established
+      Health: OK -> OK
+      Uptime: 6000 -> 6600
+      Uptime seconds: 6000 -> 6600
+      Flap count: 0 -> 0
+      Peer counters:
+        active: 360 -> 300 *
+        received: 360 -> 300 *
+        accepted: 360 -> 300 *
+        suppressed: 0 -> 0
+        advertised: 360 -> 300 *
+      Family/Table Details:
+        Table: inet.0
+          Family: ipv4-unicast
+          Result: PASS
+          RIB state: ['BGP restart is complete'] -> ['BGP restart is complete']
+          Send state: in sync -> in sync
+          active: 300 -> 300
+          received: 300 -> 300
+          accepted: 300 -> 300
+          suppressed: 0 -> 0
+          advertised: 300 -> 300
+        Table: inet6.0
+          Family: ipv6-unicast
+          Result: WARNING
+          RIB state: ['BGP restart is complete'] -> N/A
+          Send state: in sync -> N/A
+          active: 60 -> N/A
+          received: 60 -> N/A
+          accepted: 60 -> N/A
+          suppressed: 0 -> N/A
+          advertised: 60 -> N/A
+          Findings:
+            - WARNING missing_family_after: Family/table is missing after: inet6.0.
+    Peer: 203.0.113.2
+      Result: WARNING
+      Coverage: FULL
+      State: Established -> Established
+      Health: OK -> OK
+      Uptime: 7000 -> 7600
+      Uptime seconds: 7000 -> 7600
+      Flap count: 1 -> 2
+      Peer counters:
+        active: 500 -> 500
+        received: 500 -> 500
+        accepted: 500 -> 500
+        suppressed: 0 -> 0
+        advertised: 500 -> 500
+      Peer findings:
+        - WARNING flap_count_increased: BGP flap count increased (1 -> 2).
+      Family/Table Details:
+        Table: inet.0
+          Family: ipv4-unicast
+          Result: PASS
+          RIB state: ['BGP restart is complete'] -> ['BGP restart is complete']
+          Send state: in sync -> in sync
+          active: 500 -> 500
+          received: 500 -> 500
+          accepted: 500 -> 500
+          suppressed: 0 -> 0
+          advertised: 500 -> 500
+    Peer: 203.0.113.3
+      Result: WARNING
+      Coverage: FULL
+      State: Established -> Established
+      Health: OK -> OK
+      Uptime: 8000 -> 8600
+      Uptime seconds: 8000 -> 8600
+      Flap count: 5 -> 1
+      Peer counters:
+        active: 700 -> 700
+        received: 700 -> 700
+        accepted: 700 -> 700
+        suppressed: 0 -> 0
+        advertised: 700 -> 700
+      Peer findings:
+        - WARNING flap_count_reset: BGP flap count decreased/reset (5 -> 1).
+      Family/Table Details:
+        Table: inet.0
+          Family: ipv4-unicast
+          Result: PASS
+          RIB state: ['BGP restart is complete'] -> ['BGP restart is complete']
+          Send state: in sync -> in sync
+          active: 700 -> 700
+          received: 700 -> 700
+          accepted: 700 -> 700
+          suppressed: 0 -> 0
+          advertised: 700 -> 700

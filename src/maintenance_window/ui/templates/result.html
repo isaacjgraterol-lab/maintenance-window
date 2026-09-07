@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maintenance Window Result</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Maintenance Window Automation</p>
+      <h1>$result_title</h1>
+      <p class="subtitle">$result_message</p>
+    </div>
+    <div class="banner">$author_banner</div>
+  </header>
+
+  <main class="single-layout">
+    <section class="panel">
+      <div class="$exit_class">Exit code: $exit_code</div>
+      <p class="action-label">Action: $action</p>
+      <p class="hint">$result_hint</p>
+      <div class="cards">$summary_cards</div>
+      $device_summary
+      $snapshot_evidence
+      $export_actions
+      <div class="result-actions">
+        <a class="button-link primary" href="/">Back to Main Menu</a>
+        <a class="button-link secondary" href="/existing-mw">Compare Existing MW</a>
+      </div>
+      <details class="advanced-panel result-debug">
+        <summary>Command and operator output</summary>
+        <h3>Command</h3>
+        <pre>$command</pre>
+        <h3>Operator output</h3>
+        <pre>$stdout</pre>
+        <h3>STDERR / Errors</h3>
+        <pre>$stderr$error</pre>
+      </details>
+    </section>
+  </main>
+</body>
+</html>

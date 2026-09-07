@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compare Existing MW</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Maintenance Window Automation</p>
+      <h1>Compare Existing MW</h1>
+      <p class="subtitle">Use Snapshot Store as the source of truth. Manual DB records are secondary reference data.</p>
+    </div>
+    <div class="banner">$author_banner</div>
+  </header>
+
+  <main class="single-layout">
+    <section class="panel">
+      <div class="result-actions top-actions">
+        <a class="button-link" href="/">Back to Main Menu</a>
+        <a class="button-link secondary" href="/existing-mw">Refresh Snapshot Store</a>
+      </div>
+
+      <h2>1. Snapshot Store</h2>
+      <p class="hint">These MWs are detected from <code>outputs/snapshots/bgp/&lt;MW_ID&gt;/before</code> and <code>outputs/snapshots/bgp/&lt;MW_ID&gt;/after</code>. Only MWs with at least one common device are ready to compare. Re-running capture for the same MW ID updates the current snapshot evidence used by future comparisons.</p>
+
+      <div class="table-wrap">
+        <table class="snapshot-table">
+          <thead>
+            <tr>
+              <th>MW ID</th>
+              <th>Before</th>
+              <th>After</th>
+              <th>Common</th>
+              <th>Ready</th>
+              <th>Last modified</th>
+              <th>Reason / Devices</th>
+            </tr>
+          </thead>
+          <tbody>
+            $snapshot_rows
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>2. Generate comparison</h2>
+      <p class="hint">Copy the MW ID from Snapshot Store. The GUI compares only devices with snapshot files present in both before and after folders for that MW.</p>
+      <form method="post" action="/existing-mw">
+        <input type="hidden" name="protocol" value="bgp">
+        <input type="hidden" name="source" value="pyez">
+        <input type="hidden" name="device_mode" value="individual">
+        <input type="hidden" name="auth_backend" value="radius">
+        <input type="hidden" name="workers" value="1">
+        <input type="hidden" name="device" value="">
+        <input type="hidden" name="health_depth" value="auto">
+
+        <div class="grid two-columns">
+          <label>MW ID
+            <input type="text" name="mw_id" value="$mw_id" placeholder="MW_GUI_TEST_001">
+          </label>
+
+          <label>Comparison type
+            <select name="action">
+              <option value="compare-state">State only</option>
+              <option value="compare-session-health">Session health</option>
+              <option value="compare-full" selected>Full report</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="actions single-action">
+          <button type="submit" class="primary">Generate Comparison Report</button>
+        </div>
+      </form>
+    </section>
+
+    <details class="panel secondary-panel advanced-panel">
+      <summary>Advanced / Manual DB Records</summary>
+<p class="hint">This section reads the local SQLite Manual DB. It is useful for manual uploads and history, but Snapshot Store is the primary source for Existing MW comparison.</p>
+
+      <form method="post" action="/existing-mw">
+        <input type="hidden" name="protocol" value="bgp">
+        <input type="hidden" name="source" value="pyez">
+        <input type="hidden" name="device_mode" value="individual">
+        <input type="hidden" name="mw_id" value="MW_LIST_ONLY">
+        <input type="hidden" name="device" value="">
+        <label class="compact-grid">Rows to show
+          <select name="manual_db_limit">
+            $manual_db_limit_options
+          </select>
+        </label>
+        <button type="submit" name="action" value="list-manual-db" class="secondary">Refresh Manual DB Records</button>
+      </form>
+
+      <h3>Manual DB output</h3>
+      <div class="$exit_class">Exit code: $exit_code</div>
+      <pre>$manual_db_output</pre>
+      <h3>STDERR / Errors</h3>
+      <pre>$stderr$error</pre>
+    </details>
+  </main>
+</body>
+</html>

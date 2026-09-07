@@ -1,0 +1,20 @@
+{
+  "module": "bgp.state",
+  "version": 1,
+  "scope": "state",
+  "capture_level": "basic",
+  "uses_evidence": "bgp.evidence.basic",
+  "reusable_evidence": true,
+  "no_per_module_recapture": true,
+  "description": "Analyze BGP peer state from reusable BGP Basic evidence. Device capture is defined by config/audits/bgp/evidence_basic.json.",
+  "requires": [
+    "neighbor",
+    "state"
+  ],
+  "optional": [
+    "remote_as",
+    "uptime",
+    "prefix_counters",
+    "families"
+  ]
+}

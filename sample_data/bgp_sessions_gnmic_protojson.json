@@ -1,0 +1,38 @@
+{
+  "update": {
+    "timestamp": "1781697600000000000",
+    "prefix": {
+      "target": "PE01",
+      "elem": [
+        {"name": "network-instances"},
+        {"name": "network-instance", "key": {"name": "default"}},
+        {"name": "protocols"},
+        {"name": "protocol", "key": {"identifier": "BGP", "name": "BGP"}},
+        {"name": "bgp"},
+        {"name": "neighbors"}
+      ]
+    },
+    "update": [
+      {
+        "path": {
+          "elem": [
+            {"name": "neighbor", "key": {"neighbor_address": "192.0.2.1"}},
+            {"name": "state"},
+            {"name": "session-state"}
+          ]
+        },
+        "val": {"stringVal": "ESTABLISHED"}
+      },
+      {
+        "path": {
+          "elem": [
+            {"name": "neighbor", "key": {"neighbor_address": "192.0.2.2"}},
+            {"name": "state"},
+            {"name": "session-state"}
+          ]
+        },
+        "val": {"stringVal": "IDLE"}
+      }
+    ]
+  }
+}
